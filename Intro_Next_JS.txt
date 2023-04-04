@@ -1,0 +1,15 @@
+Next_JS (react framework for production)
+
+
+** yarn dev->_app.js(calls component)->index.js
+
+
+
+-----------------------Routing Section Intro----------------------------
+
+
+File-system based routing mechanism
+
+When a file is added to the pages folder in a project, it automatically becomes available as a route
+
+By mixing and matching file names with a nested folder structure, it is possible to pretty much define the most common routing patterns

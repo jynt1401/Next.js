@@ -1,0 +1,17 @@
+1.OFFICIAL DOC
+
+https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app
+
+
+
+2.INTRODUCTION
+
+https://nextjs.org/learn/foundations/about-nextjs
+
+
+
+3.TEMPLATE
+
+https://vercel.com/templates?framework=next.js
+
+
