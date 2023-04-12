@@ -8,8 +8,25 @@ Next_JS (react framework for production)
 -----------------------Routing Section Intro----------------------------
 
 
+#----pages based routing-------#
+
 File-system based routing mechanism
 
 When a file is added to the pages folder in a project, it automatically becomes available as a route
 
 By mixing and matching file names with a nested folder structure, it is possible to pretty much define the most common routing patterns
+
+
+------------(index.js will be the default page)--------------
+
+if we wanna go to about page its route will be localhost:3000/about then for link server will call the about file from pages.
+
+similary if we wanna open profile page then make file name it profile then when link hits localhost:3000/profile then that page will open
+
+
+#--------nested routing--------#
+
+if we wanna open nested pages like blogs then blog_1 or blog_2 then we will create folder name blog and all files/pages related to this route will be on this folder. The first file will be again index file.
+so if we hit localhost:3000/blog then index file of this folder will render. And other pages blog_1 and blog_2 so when localhost:3000/blog/blog_1 then this will render.
+
+so for nested routes we have to make nested folder structure.c
