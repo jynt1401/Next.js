@@ -29,4 +29,27 @@ similary if we wanna open profile page then make file name it profile then when 
 if we wanna open nested pages like blogs then blog_1 or blog_2 then we will create folder name blog and all files/pages related to this route will be on this folder. The first file will be again index file.
 so if we hit localhost:3000/blog then index file of this folder will render. And other pages blog_1 and blog_2 so when localhost:3000/blog/blog_1 then this will render.
 
-so for nested routes we have to make nested folder structure.c
+so for nested routes we have to make nested folder structure.
+
+
+#-----dynamic routing-----#
+
+if we want to open specific page and we dont wanna create pages manually then we will use dynamic routing 
+
+suppose we have product page which have list of all the product list then onclicking the list item we wanna to show details of that page.
+
+we will create product folder with list on it and  [productid].js where [] has variable information.
+
+
+now when we want to use the value from router we will use hook {useRouter}
+
+import {useRouter} from 'next/router
+
+function productDetails(){
+    const router=useRouter();
+    const id=router.query.<variable name within []>
+
+    return(
+        <h1>details of {id}</h1>
+    )
+}
