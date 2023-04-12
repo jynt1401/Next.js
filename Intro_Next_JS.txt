@@ -59,3 +59,7 @@ function productDetails(){
 if we want to open 5th review of 78th product then link to hit will be .....localhost:3000/product/78/review/5
 
 here product will have dynamic folder which contain index file and review file
+
+
+
+
