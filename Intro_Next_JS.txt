@@ -94,3 +94,8 @@ const router=useRouter()
           place a order
         </button>
       </div>
+
+
+
+
+we can costumize 404 error page just create 404.js page so if page not found this will work
