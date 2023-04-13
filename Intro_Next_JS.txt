@@ -73,6 +73,24 @@ export default function doc() {
 
 ----------------------------------Navigation----------------------------------------------
 
+
+
 we will use link to navigate through different routes
 
 REPLACE tag on link we make you to go to home page localhost:3000
+
+
+we will navigate to route using function same as Link
+
+const router=useRouter()
+  const handleClick=()=>{
+    console.log("place your order")
+    router.push('/product')
+    // router.replace('/product')
+  }
+
+  <div>
+        <button onClick={handleClick}> 
+          place a order
+        </button>
+      </div>
