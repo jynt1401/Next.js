@@ -66,3 +66,13 @@ export default function doc() {
         <h1>home doc page</h1>
     )
 }
+
+
+
+
+
+----------------------------------Navigation----------------------------------------------
+
+we will use link to navigate through different routes
+
+REPLACE tag on link we make you to go to home page localhost:3000
