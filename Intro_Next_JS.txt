@@ -32,34 +32,37 @@ so if we hit localhost:3000/blog then index file of this folder will render. And
 so for nested routes we have to make nested folder structure.
 
 
-#-----dynamic routing-----#
+#----------Catch all routes---------#
 
-if we want to open specific page and we dont wanna create pages manually then we will use dynamic routing 
+if we have common pages and we dont want to make many nested folders so we will common page route
+if url have that keyword with other word then that page will render.
 
-suppose we have product page which have list of all the product list then onclicking the list item we wanna to show details of that page.
+make folder with file name [...name].js where NAME will be find from the url
 
-we will create product folder with list on it and  [productid].js where [] has variable information.
+code------>
 
+import React from 'react'
+import {useRouter} from 'next/router'
 
-now when we want to use the value from router we will use hook {useRouter}
+export default function doc() {
+    const {param=[]}=router.query
+    console.log(param)
+ 
+    if(param.length===2){
+        return(
+            <div>
 
-import {useRouter} from 'next/router
-
-function productDetails(){
-    const router=useRouter();
-    const id=router.query.<variable name within []>
-
+            <h1>doc for {param[0]}</h1>
+            <h1>doc doc for {param[1]}</h1>
+            </div>
+        )
+    }
+    else if(param.length===1){
+        return(
+            <h1>{param[0]}</h1>
+        )
+    }
     return(
-        <h1>details of {id}</h1>
+        <h1>home doc page</h1>
     )
 }
-
-#-----nested dynamic routing-----#
-
-if we want to open 5th review of 78th product then link to hit will be .....localhost:3000/product/78/review/5
-
-here product will have dynamic folder which contain index file and review file
-
-
-
-
